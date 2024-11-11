@@ -16,9 +16,9 @@
 
   .card {
     position: relative;
-    width: 800px;
+    width: 500px;
     height: 510px;
-    background: #cf3115;
+    background: #e6b61b;
     border-radius: 60px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     transform-style: preserve-3d;
@@ -77,7 +77,7 @@
   @keyframes colorChange {
     0% { color: #ff6b6b; }
     50% { color: #ffd93d; }
-    100% { color: #ff6b6b; }
+    100% { color: #13be85; }
   }
 
   .details {
@@ -126,6 +126,73 @@
     0% { transform: translateY(-100%) rotate(0deg); }
     100% { transform: translateY(100%) rotate(360deg); }
   }
+
+  body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+        }
+  
+
+        .invitation-card {
+            background-color: #fff5f7;
+            border-radius: 12px;
+            padding: 24px;
+            width: 350px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header {
+            color: #161616;
+            font-size: 15px;
+            /*font-weight: bold;*/
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .info-item {
+            margin: 16px 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .name {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .subtitle {
+            color: #666;
+            margin: 4px 0 0 0;
+            font-size: 14px;
+        }
+
+        .location-name {
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .location-address {
+            color: #666;
+            font-size: 14px;
+            margin: 4px 0 0 0;
+        }
+
+        .footer {
+            text-align: center;
+            color: #0a0a0a;
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1px solid #ffdbeb;
+        }
 </style>
 </head>
 <body>
@@ -133,14 +200,40 @@
     <div class="front">
       <div class="balloon">🎈🎂🎈</div>
       <h1>¡CELEBRA MI CUMPLEAÑOS!</h1>
-      <div class="details">
-        <p>Hola <h3>PEPITO PEREZ</h3>, estás invitado a celebrar</p>
-        <p>el cumpleaños de</p>
-        <h2>SANTIAGO PEÑA</h2>
-        <h3>LUGAR:</h3>
-        <p>Sábado, 15 de Diciembre</p>
-        <p>3:00 PM</p>
-        <p>Calle Principal #123</p>
+        <div class="invitation-card">
+
+          <div class="header">
+            <h1>Pepito Perez</h1>
+            <p>🎉 Hoy celebramos a una persona increíble que ilumina nuestras vidas con su presencia. Que este nuevo año esté lleno de momentos mágicos, amor y sueños cumplidos. ¡Gracias por ser tan especial! 🥂✨</p>
+          </div>
+        
+        <div class="info-item">
+            🎂
+            <div>
+                <p class="name">Ana García</p>
+            </div>
+        </div>
+
+        <div class="info-item">
+            📅  Sábado, 15 de Diciembre de 2024
+        </div>
+
+        <div class="info-item">
+            🕐 7:00 PM - 11:00 PM
+        </div>
+
+        <div class="info-item">
+            📍
+            <div>
+                <p class="location-name">Salón de Eventos "El Jardín"</p>
+                <p class="location-address">Av. Principal #123, Ciudad</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            ¡Acompáñanos a celebrar este día especial!
+        </div>
+    </div>
       </div>
       <div class="sparkles">
         <div class="sparkle" style="top: 20%; left: 20%"></div>
@@ -149,10 +242,6 @@
       </div>
     </div>
     <div class="back">
-      <h2>¡No faltes!</h2>
-      <p>Habrá música, juegos y mucha diversión</p>
-      <p>Por favor confirma tu asistencia</p>
-      <p>Tel: 555-0123</p>
       <div class="confetti">
         <div class="confetti-piece" style="left: 20%"></div>
         <div class="confetti-piece" style="left: 40%"></div>
